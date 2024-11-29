@@ -62,3 +62,8 @@ nll_lm.6 <- function(params, y, ...) {
     hat_var = var(resid)
   ))
 }
+
+### Writing the estimated coefficients from lm()
+model <- lm(y ~ x1 + x2 + x3, df)
+model$coefficients
+var(model$residuals)
